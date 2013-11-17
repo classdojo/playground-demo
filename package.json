@@ -27,7 +27,8 @@
     "funwrap": "0.0.9",
     "mediocre": "0.0.2",
     "bindable-call": "0.0.3",
-    "outcome": "0.0.18"
+    "outcome": "0.0.18",
+    "bindable": "~0.4.10"
   },
   "devDependencies": {
     "cortado": "0.0.x"

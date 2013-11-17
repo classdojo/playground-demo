@@ -1,0 +1,3 @@
+- <a href="#" data-bind="{{ onClick: selectComponent(this) }}">
+  {{ model.viewName }}
+</a> <br />

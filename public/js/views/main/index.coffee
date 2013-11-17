@@ -5,6 +5,7 @@ class MainView extends mojo.View
 
   username: "user"
   password: "pass"
+  placeholders: "{{placeholders}}"
 
   ###
   ###

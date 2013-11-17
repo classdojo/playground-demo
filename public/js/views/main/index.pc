@@ -46,6 +46,10 @@
       {{ html: sections.forecast }}
     {{/}}
 
+    {{# if: user.forecast.loading }}
+      <span style="color: grey;">Loading forecast...</span>
+    {{/}}
+
 
   </div>
 

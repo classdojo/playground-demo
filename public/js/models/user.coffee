@@ -15,7 +15,7 @@ class User extends model.Model
   ###
 
   virtuals:
-    "forecast": (next) -> @application.createModel("forecasts", { user: @ }).load next
+    "forecast": (next) -> next null, @application.createModel("forecasts", { user: @ })
 
 
 

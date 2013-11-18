@@ -29,7 +29,8 @@
     "bindable-call": "0.0.3",
     "outcome": "0.0.18",
     "bindable": "~0.4.10",
-    "bindable-model": "0.0.24"
+    "bindable-model": "0.0.x",
+    "type-component": "0.0.1"
   },
   "devDependencies": {
     "cortado": "0.0.x"

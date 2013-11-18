@@ -17,7 +17,7 @@ module.exports = (app) ->
 
   for name of playgroundViewComponents
     app.registerViewClass name, viewClass = playgroundViewComponents[name]
-    console.log name, viewClass
+
     playgroundViewComponentsAr.push new bindable.Object {
       viewName: name
       viewClass: viewClass

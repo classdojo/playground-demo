@@ -38,3 +38,11 @@ npm run server
 ```bash
 npm test
 ```
+
+## Troubleshooting
+
+Trouble with dependencies?  Remove your node modules and reinstall.  
+
+```bash
+rm -rf node_modules; npm cache clear; npm install; npm run server
+```

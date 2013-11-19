@@ -6,6 +6,8 @@ class User extends model.Model
   ###
   ###
 
+  define: ["email"]
+
   constructor: (options) ->
     @application = options.application
     super options

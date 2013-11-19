@@ -10,7 +10,8 @@ module.exports = (app) ->
   # add any playground components here - they'll show up in the sidebar
   playgroundViewComponents = {
     hello: require("./hello"),
-    custom: require("./custom")
+    custom: require("./custom"),
+    user: require("./user")
   }
 
   playgroundViewComponentsAr = new bindable.Collection()

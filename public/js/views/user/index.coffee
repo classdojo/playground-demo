@@ -1,0 +1,60 @@
+mojo = require "mojojs"
+bindableCall = require "bindable-call"
+
+class UserView extends mojo.View
+
+  email: "" # "Enter email"
+  returnError: false
+
+  ###
+  ###
+
+  define: ["email", "user"]
+
+  ###
+  ###
+
+  bindings: []
+
+  ###
+  ###
+
+  paper: require "./index.pc"
+
+  ###
+  ###
+
+  loadUser: () ->
+    if @email == "valid"
+      console.log "loaded user"
+      @user = @application.createModel "user", {
+        _id:  "50a15e089014da601900000c"
+        email:  "frank+parent@classdojo.com"
+        password:  "58a47f9d4ae47ab7cbb04717ce446ee7fedf791a"
+        parentid:  "50a15e089014da601900000b"
+        teacherid: null
+      }
+      
+      console.log @user
+      @set('user', @user)
+    else
+      console.log "user not loaded"
+    
+
+  ###
+  ###
+
+  sections:
+    user: require(".././userSection")
+    #user:
+    #  source: "user"
+    #  modelViewClass: require(".././userSection")
+    parent: require(".././parentSection")
+    teacher: require(".././teacherSection")
+    # forecast:
+    #   type: "list"
+    #   source: "user.forecast"
+    #   modelViewClass: require("./forecast")
+
+
+module.exports = UserView

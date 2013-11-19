@@ -1,0 +1,20 @@
+<div class="row">
+
+  <div class="col-md-8">
+    <h1>User</h1>
+    
+    <form data-bind="{{ onSubmit: loadUser() }}">
+      <input type="text" placeholder="Enter Email" data-bind="{{ model: email }}"/>
+      <input type="submit" value="Search" />
+    </form>
+    {{ user._id  || "---id" }}
+    {{ html: sections.user }}
+    
+    {{ html: sections.parent }}
+
+    {{ html: sections.teacher }}
+  </div>
+
+  <div class="col-md-4">
+  </div>
+</div>

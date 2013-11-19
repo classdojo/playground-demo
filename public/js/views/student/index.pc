@@ -1,0 +1,4 @@
+<div>
+name: {{ student.name }} <br />
+class: {{ student.class }} <br />
+</div>

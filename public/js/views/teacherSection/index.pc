@@ -2,6 +2,9 @@
 
   <div class="col-md-8">
     <h1>TeacherData</h1>
+    _id: {{ teacher.id }} <br />
+    name: {{ teacher.name }} <br />
+    email: {{ teacher.email }} <br />
   </div>
 
   <div class="col-md-4">

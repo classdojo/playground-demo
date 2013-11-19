@@ -2,6 +2,12 @@
 
   <div class="col-md-8">
     <h1>ParentData</h1>
+    _id: {{ user2.parent._id }} <br />
+    name: {{ user2.parent.name }} <br />
+    email: {{ user2.parent.email }} <br />
+
+    {{ html: sections.students }}
+
   </div>
   <div class="col-md-4">
   </div>

@@ -2,7 +2,13 @@
 
   <div class="col-md-8">
     <h1>UserData</h1>
+    _id: {{ user2._id }} <br />
+    email: {{ user2.email }} <br />
+    password: --- <br />
+    parentId: {{ user2.parentId }} <br />
+    teacherId: {{ user2.teacherId }} <br />
   </div>
+
 
   <div class="col-md-4">
   </div>

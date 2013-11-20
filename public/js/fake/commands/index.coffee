@@ -3,7 +3,9 @@ mediocre = require "mediocre"
 commands = [
   require("./bootstrap"),
   require("./api/login"),
-  require("./api/forecast")
+  require("./api/forecast"),
+  require("./api/getUser"),
+  require("./api/findUser")
 ]
 
 module.exports = (app) ->

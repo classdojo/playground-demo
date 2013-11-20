@@ -2,8 +2,12 @@
 
   <div class="col-md-8">
     <h1>User</h1>
+
+    {{ user.loading ? "loading user..." : "" }}
+
+    {{ error.message }}
     
-    <form data-bind="{{ onSubmit: loadUser() }}">
+    <form data-bind="{{ onSubmit: findUser(email) }}">
       <input type="text" placeholder="Enter Email" data-bind="{{ model: email }}"/>
       <input type="submit" value="Search" />
     </form>

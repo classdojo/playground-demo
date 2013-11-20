@@ -3,8 +3,8 @@ bindableCall = require "bindable-call"
 
 class StudentView extends mojo.View
   paper: require "./index.pc"
+  bindings:
+    "model": "student"
 
-  _onRender: () ->
-    console.log @model
 
 module.exports = StudentView

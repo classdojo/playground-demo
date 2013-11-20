@@ -1,23 +1,28 @@
 model = require "bindable-model"
 Forecast = require "./forecast"
 
-class User extends model.Model
+class User extends require("./base")
 
   ###
   ###
 
   define: ["email"]
-
-  constructor: (options) ->
-    @application = options.application
-    super options
-
-
+  
   ###
   ###
 
   virtuals:
     "forecast": (next) -> next null, @application.createModel("forecasts", { user: @ })
+
+  ###
+  ###
+
+  _load: (next) ->
+    console.log "loading user"
+    @application.mediator.execute "getUser", { _id: @get("_id") }, (err, data) =>
+      return next(err) if err?
+      @set data
+      next()
 
 
 

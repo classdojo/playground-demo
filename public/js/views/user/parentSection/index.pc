@@ -2,9 +2,9 @@
 
   <div class="col-md-8">
     <h1>ParentData</h1>
-    _id: {{ user2.parent._id }} <br />
-    name: {{ user2.parent.name }} <br />
-    email: {{ user2.parent.email }} <br />
+    _id: {{ user.parent._id }} <br />
+    name: {{ user.parent.name }} <br />
+    email: {{ user.parent.email }} <br />
 
     {{ html: sections.students }}
 

@@ -24,7 +24,7 @@
 ## Installation
 
 ```bash
-git clone git@github.com:classdojo/mojo-starter.git && cd mojo-starter && npm install;
+git clone git@github.com:classdojo/playground-demo.git && cd playground-demo && npm install;
 ```
 
 ## Running
